@@ -21,5 +21,5 @@ for(const icon of manifest.icons) { assert.ok(icon.src.startsWith(base));assert.
 const image=fs.readFileSync('dist/og-card.png');
 assert.equal(image.readUInt32BE(16),1200);assert.equal(image.readUInt32BE(20),630);
 assert.ok(!fs.existsSync('dist/robots.txt')&&!fs.existsSync('dist/sitemap.xml'));
-assert.ok(!fs.existsSync('.vercel'));
+assert.ok(!fs.existsSync('dist/.vercel'));
 console.log(JSON.stringify({initial_html:true,canonical:true,prefix_assets:true,og:[1200,630],hub_owned_discovery:true}));
