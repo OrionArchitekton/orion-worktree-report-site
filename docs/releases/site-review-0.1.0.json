@@ -1,0 +1,20 @@
+{
+  "status": "private-local-candidate",
+  "scope": "Local built Works page with local combined hub proxy; hosted availability and human acceptance unverified",
+  "initial_html": true,
+  "hydration_page_errors": 0,
+  "one_h1": true,
+  "viewport_widths": [
+    1440,
+    390,
+    320
+  ],
+  "coverage_example_toggle": true,
+  "keyboard_skip_link": true,
+  "reduced_motion": true,
+  "script_disabled_works_and_guide": true,
+  "local_prefixed_asset_responses": true,
+  "built_index_sha256": "310a41973ca3b08e3c31b2a4a097dc3555f45e8281b43666cd9012f5698d2096",
+  "review_mode": "Sequential main-thread implementation and review; not independent-agent or qualified-human source approval",
+  "mobile_example_paths_fit_one_line": true
+}
