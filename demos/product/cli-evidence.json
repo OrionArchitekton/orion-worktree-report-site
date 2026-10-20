@@ -1,0 +1,65 @@
+{
+  "scope": "Selected native CLI fields only; synthetic disposable Git fixture. Absolute paths and native IDs omitted from public evidence. No source code or real repository changed.",
+  "artifact_sha256": "f06d7ca9d3fd1001b9bd16ed18a8ee7827727c09eeb4a535f41692723336550b",
+  "environment": {
+    "python": "3.11.9",
+    "git": "2.43.0",
+    "platform": "WSL2 Linux, local ext4"
+  },
+  "observations": [
+    {
+      "step": "version",
+      "exit": 0,
+      "authority": "none"
+    },
+    {
+      "step": "clean",
+      "exit": 0,
+      "authority": "none",
+      "coverage": {
+        "status": "complete",
+        "repositories_selected": 1,
+        "repositories_discovered": 1,
+        "registered_worktrees": 3,
+        "worktrees_observed": 3,
+        "worktrees_unavailable": 0
+      },
+      "conclusion": "no_overlap_observed",
+      "overlap_paths": []
+    },
+    {
+      "step": "overlap",
+      "exit": 1,
+      "authority": "none",
+      "coverage": {
+        "status": "complete",
+        "repositories_selected": 1,
+        "repositories_discovered": 1,
+        "registered_worktrees": 3,
+        "worktrees_observed": 3,
+        "worktrees_unavailable": 0
+      },
+      "conclusion": "overlap_observed",
+      "overlap_paths": [
+        "shared.txt"
+      ]
+    },
+    {
+      "step": "partial",
+      "exit": 3,
+      "authority": "none",
+      "coverage": {
+        "status": "partial",
+        "repositories_selected": 2,
+        "repositories_discovered": 1,
+        "registered_worktrees": null,
+        "worktrees_observed": 3,
+        "worktrees_unavailable": 0
+      },
+      "conclusion": "overlap_observed",
+      "overlap_paths": [
+        "shared.txt"
+      ]
+    }
+  ]
+}

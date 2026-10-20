@@ -8,6 +8,7 @@
 @source "./index.html";
 @source "./index.tsx";
 @source "./App.tsx";
+@source "./ProductDemo.tsx";
 @source "./constants.ts";
 @source "./vite-plugin-bodybake.ts";
 
@@ -105,3 +106,5 @@ html { scroll-behavior: smooth; }
 
 .observation-panel { background: #020B29; color: #fff; }
 .example-switch[aria-pressed="true"] { border-color: #993F17; color: #993F17; background: #fff5ed; }
+
+.product-demo-player { width: 100%; height: auto; aspect-ratio: 16 / 9; }

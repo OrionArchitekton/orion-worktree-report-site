@@ -1,3 +1,4 @@
+import { ProductDemo } from './ProductDemo';
 import { useState } from 'react';
 import { PRODUCT_DATA as p } from './constants';
 
@@ -42,6 +43,7 @@ export default function App() {
         <p className="text-lg md:text-xl text-neutral-700 leading-relaxed max-w-xl">Choose local repositories and see which registered worktrees share an uncommitted path. Every report says what it observed and what it could not check.</p>
         <div className="flex flex-wrap gap-5 items-center mt-7"><a href={p.guide} className="bg-copper-dark hover:bg-copper-deep text-white px-5 py-3 rounded text-sm font-medium">Try the disposable example</a><a href={p.github} className="text-sm underline underline-offset-4 hover:text-copper-deep">View on GitHub</a></div>
       </header>
+      <ProductDemo />
       <Observation/>
       <section className="mb-12">
         <Title number="01">Start with coverage</Title>
