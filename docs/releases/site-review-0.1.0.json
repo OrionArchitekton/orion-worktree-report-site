@@ -1,6 +1,6 @@
 {
-  "status": "private-local-candidate",
-  "scope": "Local built Works page with local combined hub proxy; hosted availability and human acceptance unverified",
+  "status": "local-release-candidate",
+  "scope": "Built Works page, including executable built-bundle hydration and both coverage controls. Hosted availability and qualified final-head source review remain unverified.",
   "initial_html": true,
   "hydration_page_errors": 0,
   "one_h1": true,
@@ -14,7 +14,10 @@
   "reduced_motion": true,
   "script_disabled_works_and_guide": true,
   "local_prefixed_asset_responses": true,
-  "built_index_sha256": "310a41973ca3b08e3c31b2a4a097dc3555f45e8281b43666cd9012f5698d2096",
+  "built_index_sha256": "77c61dd9da6ac9cfd1d64746d59b30e864add4403d125a36fd75dd480d339250",
   "review_mode": "Sequential main-thread implementation and review; not independent-agent or qualified-human source approval",
-  "mobile_example_paths_fit_one_line": true
+  "mobile_example_paths_fit_one_line": true,
+  "release_authorization": "Dan approved the named package release; CI, source review and publishing gates are separate.",
+  "partial_counts_unknown_total_and_observed_subset": true,
+  "ci_built_bundle_interactions": true
 }

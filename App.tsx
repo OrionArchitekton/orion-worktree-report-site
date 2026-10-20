@@ -12,15 +12,17 @@ function Observation() {
       </div>
     </div>
     <div className="observation-panel rounded p-5 md:p-7 font-mono text-sm leading-7">
-      <p className="text-neutral-300 text-xs mb-5">1 REPOSITORY / 3 REGISTERED WORKTREES</p>
+      <p className="text-neutral-300 text-xs mb-5">{partial ? '2 SELECTED REPOSITORIES / REGISTERED TOTAL UNKNOWN' : '1 REPOSITORY / 3 REGISTERED WORKTREES'}</p>
+      {partial && <p className="text-neutral-300 text-xs mb-4">Observed subset: 1 repository / 3 worktrees</p>}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-xs md:text-sm">
         <div className="col-span-2 md:col-span-1"><p className="text-neutral-400 text-xs">main</p><p className="mt-2">clean</p></div>
         <div><p className="text-neutral-400 text-xs">worker-a</p><p className="mt-2 text-copper-light break-all">shared.txt</p></div>
         <div><p className="text-neutral-400 text-xs">worker-b</p><p className="mt-2 text-copper-light break-all">shared.txt</p></div>
+        {partial && <div className="col-span-2 md:col-span-3"><p className="text-neutral-400 text-xs">unavailable selection</p><p className="mt-2">not observed</p></div>}
       </div>
       <div aria-live="polite" aria-atomic="true" className="border-t border-neutral-700 mt-6 pt-4">
         <p>{partial ? 'PARTIAL COVERAGE · EXIT 3' : 'COMPLETE COVERAGE · EXIT 1'}</p>
-        <p className="text-copper-light mt-1">1 shared path · 1 worktree pair</p>
+        <p className="text-copper-light mt-1">{partial ? 'Observed subset: 1 shared path · 1 worktree pair' : '1 shared path · 1 worktree pair'}</p>
         <p className="text-neutral-300 text-xs mt-3">{partial ? 'One added repository is unavailable. Registered total: unknown. The observed pair remains a subset.' : 'All three registered worktrees were observed. The two dirty checkouts share one exact path.'}</p>
       </div>
     </div>
