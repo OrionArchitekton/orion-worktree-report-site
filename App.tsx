@@ -65,6 +65,12 @@ export default function App() {
         </dl>
         <p className="border-t border-neutral-200 mt-7 pt-5 text-xs text-neutral-600 leading-6">A separate tool with a clear role: PM coordinates work; browser and phone interact; Handoff carries continuity; Results retains output. Worktree Report supplies an observation. Installing it creates no integration or change to those packages.</p>
       </section>
+        <aside aria-labelledby="development-evidence-heading" className="mt-12 mb-12 rounded-md border border-neutral-200 p-6">
+          <h2 id="development-evidence-heading" className="font-mono text-sm font-semibold text-neutral-900 mb-3">Carry development evidence between workers</h2>
+          <p className="text-sm text-neutral-700 leading-7">Try the optional Orion Starter development evidence preview: retain an exact worktree observation, hand over a compact reference, then recover and independently observe before completing a local demonstration.</p>
+          <a className="inline-block mt-3 text-sm underline underline-offset-4 hover:text-copper-deep" href="https://www.danmercede.com/guides/agent-development-evidence-handoff">Read the development evidence walkthrough</a>
+          <p className="mt-3 text-xs text-neutral-600 leading-6">Completion demonstrates a deliberately created overlap. It makes no merge-safety claim.</p>
+        </aside>
       <footer className="border-t border-neutral-200 pt-7 text-sm"><div className="flex flex-wrap gap-6"><a className="underline underline-offset-4 hover:text-copper-deep" href={p.guide}>Follow the guide</a><a className="underline underline-offset-4 hover:text-copper-deep" href={p.github+'/blob/main/NOTICE'}>Attribution and license notices</a></div><p className="text-xs text-neutral-600 mt-6">MIT licensed. Built by Dan Mercede. Core ECC acknowledgment retained in NOTICE.</p></footer>
     </main>
   </>;
