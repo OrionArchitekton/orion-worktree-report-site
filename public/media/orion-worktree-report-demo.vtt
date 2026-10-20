@@ -1,0 +1,13 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.440
+Orion Worktree Report observes the local repositories you select. In this disposable example, the first scan observes three registered worktrees and reports no uncommitted path overlap.
+
+2
+00:00:10.800 --> 00:00:22.240
+Now two worktrees change the same tracked path. The scan reports the shared path and exits one, with complete coverage. It observes this overlap without deciding which worker should proceed.
+
+3
+00:00:22.700 --> 00:00:37.040
+Add an unavailable repository and coverage becomes partial. The known overlap stays visible, while the total is unknown. This report grants no task ownership, file lock or merge permission. The source and walkthrough are linked below.

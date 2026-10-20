@@ -1,0 +1,14 @@
+{
+  "slug": "orion-worktree-report",
+  "demonstrated_version": "v0.1.0",
+  "source_commit": "f96a52fa4a1e99e6d6511df39ff0871cc27f66a0",
+  "source_sha256": "a1f626d36438aaf51e07aca2c322c9b7403f029251ee7df65cc7b9d5ea8c48b4",
+  "source_name": "agent-demo-video final.mp4",
+  "duration_seconds": 37.7,
+  "voice": "Locally synthesized Dan narration using the existing authorized voice command",
+  "files": {
+    "orion-worktree-report-demo.jpg": "5321b932defcde794e7dfbb16946f620e23da52adea167663ef248eed72f9049",
+    "orion-worktree-report-demo.mp4": "1cf2f878bd251e900556b9901fd421ece4c8dd5c8ca25ae24344c54eeabdc978",
+    "orion-worktree-report-demo.vtt": "227fdffd0c8322376525bec9e37382431757b22effbce1a90f436ee1545a488a"
+  }
+}
