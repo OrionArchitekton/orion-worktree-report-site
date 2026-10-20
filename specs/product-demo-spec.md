@@ -10,5 +10,7 @@ A visitor reaches the product page, starts this product's video deliberately, re
 - Disclose the demonstrated version, reused/edited source, narration, synthetic inputs and observed scope. Never present a fixture as a live deployment, provider benchmark or independent approval.
 - Preserve existing product claims, source/install/guide links and deployment configuration.
 
+- Playback position and selected caption mode survive deferred client startup. Native captions remain opt-in over the existing open captions.
+
 ## Test seam decision
 The built document and its actual media files form the existing consumer boundary. A built-output check covers accessible markup, product-specific URLs and file integrity; browser proof covers user-triggered audio/video decode, seeking, captions and mobile/no-JavaScript behavior. No tool runtime or provider is needed for site tests. Public playback remains a separate post-approval check.

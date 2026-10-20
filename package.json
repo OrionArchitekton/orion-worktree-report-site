@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && npm run test:demo",
+    "build": "vite build && npm run test:built",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "check:built": "node scripts/check-built.mjs",
     "test": "npm run build && npm run check:built && node scripts/check-ci-gate.mjs && node scripts/check-interaction.mjs",
-    "test:demo": "node --test tests/product-demo.test.mjs"
+    "test:demo": "npm run build",
+    "test:built": "node --test tests/*.test.mjs"
   },
   "dependencies": {
     "react": "^19.2.3",
